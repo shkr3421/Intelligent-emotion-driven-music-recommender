@@ -6,6 +6,9 @@ import numpy as np
 import mediapipe as mp 
 from keras.models import load_model
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Load model and labels
 model  = load_model("model.h5")
@@ -32,7 +35,7 @@ if not emotion:
 else:
     st.session_state["run"] = "false"
 
-YOUTUBE_API_KEY = "AIzaSyDkfXq4UPliUHYbAt5Y5g6x53vzSq3r33I"
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 
 def get_youtube_videos(api_key, query, max_results=5):
     url = "https://www.googleapis.com/youtube/v3/search"
