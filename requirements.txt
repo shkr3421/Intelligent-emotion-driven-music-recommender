@@ -6,4 +6,4 @@ keras
 tensorflow
 requests
 python-dotenv
-git+https://github.com/google/mediapipe.git
+
