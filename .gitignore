@@ -1,0 +1,17 @@
+# Ignore environment files
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Model and temporary files
+*.npy
+*.h5
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets
+.secrets.toml
