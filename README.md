@@ -1,22 +1,59 @@
-# emotion-based-music
-<h1>Explaination Video</h1>
-<a href="https://youtu.be/uDzLxos0lNU">Emotion based music | ai | deep learning project | with code | ml project</a>
-<a href="https://youtu.be/uDzLxos0lNU"><img src="emotion.jpg"/></a>
+# 🎵 Emotion-Based Music Recommender
 
-<h1>Description</h1>
-Welcome to new project emotion based music built by using mediapipe and keras. also opencv and streamlit is used to create a webapp. for capturing the webcam in the browser i used streamlit-webrtc module. I explained all of the code in this video which is required to create a webapp for emotion based music recommender.
-<br><br>
-In this video I used live emoji project code to create a model which could classify different emotions so I already explained the code for that which is over here
-<br>Data Collection script : https://youtu.be/ZxZSGRdTLtE
-<br>Data Training and Inference script : https://youtu.be/He_oZ-MnIrU
-<br>code for live emoji : https://github.com/Pawandeep-prog/liveEmoji
+An intelligent web application that captures real-time facial expressions using your webcam, detects your current emotion using deep learning, and recommends songs tailored to your mood via YouTube API.
 
-<h1>Connect with me</h1>
-If you have any queries regarding any of the topic I discussed in this video feel free to talk to e using below links:<br>
-facebook : https://m.facebook.com/proogramminghub<br>
-instagram : @programming_hut<br>
-twitter : https://twitter.com/programming_hut<br>
-github : https://github.com/Pawandeep-prog<br>
-discord : https://discord.gg/G5Cunyg<br>
-linkedin : https://www.linkedin.com/in/programminghut<br>
-youtube : https://www.youtube.com/c/programminghutofficial<br>
+> 👨‍💻 Built using: **Python**, **Streamlit**, **MediaPipe**, **Keras**, **YouTube Data API**
+
+---
+
+
+## 🧠 How It Works
+
+1. **Webcam Stream**: Captures face and hand landmarks using MediaPipe Holistic.
+2. **Emotion Detection**: Uses a pre-trained Keras model to classify emotions.
+3. **Song Recommendation**: Fetches songs from YouTube based on the detected emotion + language + artist.
+4. **Secure**: Uses `.env` and Streamlit secrets to keep API keys safe.
+
+---
+
+## 📷 Emotions Detected
+
+- Happy
+- Sad
+- Angry
+- Neutral
+- Surprised  
+(*Model customizable for more labels*)
+
+---
+
+## 🛠️ Tech Stack
+
+| Frontend         | Backend       | ML / AI       | API Integration     |
+|------------------|---------------|----------------|----------------------|
+| Streamlit        | Python        | Keras          | YouTube Data API     |
+| Streamlit WebRTC | MediaPipe     | TensorFlow     | Requests             |
+
+---
+
+## 🔐 API Key Management
+
+- API keys are **not hardcoded**.
+- Local `.env` file used for development (excluded via `.gitignore`)
+- Streamlit Cloud uses `secrets.toml` for secure API injection
+
+---
+
+## 🧪 Running Locally
+
+### 🔧 Prerequisites
+
+- Python 3.8+
+- `pip install -r requirements.txt`
+
+### 📁 Setup
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/shkr3421/Emotion-based-music-recommender.git
+   cd Emotion-based-music-recommender
