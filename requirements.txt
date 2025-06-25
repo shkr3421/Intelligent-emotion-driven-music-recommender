@@ -1,9 +1,9 @@
 streamlit
 streamlit-webrtc
 opencv-python-headless
-mediapipe
 numpy
 keras
 tensorflow
 requests
 python-dotenv
+git+https://github.com/google/mediapipe.git
