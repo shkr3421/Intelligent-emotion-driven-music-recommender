@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 streamlit
 streamlit-webrtc
 opencv-python-headless
+=======
+streamlit==1.35.0
+streamlit-webrtc==0.45.2
+opencv-python-headless==4.9.0.80
+mediapipe==0.10.9
+>>>>>>> 87301a2 (🚀 Final: fixed dependencies and Python version)
 numpy
 keras
 tensorflow
 requests
+<<<<<<< HEAD
 python-dotenv
 
+=======
+>>>>>>> 87301a2 (🚀 Final: fixed dependencies and Python version)
